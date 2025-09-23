@@ -15,3 +15,16 @@ body {
 .rounded-custom {
     border-radius: 30px !important;
 }
+
+.copy-msg {
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+  margin-left: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  display: none;
+}
+
