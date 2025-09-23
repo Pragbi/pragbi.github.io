@@ -1,5 +1,9 @@
-document.getElementById('lastmod').textContent =
-    new Date(document.lastModified).toLocaleDateString('de-DE');
+const d = new Date(document.lastModified);
+const day = String(d.getDate()).padStart(2, "0");
+const month = String(d.getMonth() + 1).padStart(2, "0");
+const year = d.getFullYear();
+
+document.getElementById("lastmod").textContent = `${day}.${month}.${year}`;
 
 const btnphone = document.getElementById("copyPhone");
 const msgphone = document.getElementById("copyMsgPhone");
