@@ -8,49 +8,106 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <main class="vh-100 d-flex justify-content-center align-items-center">
-    <div class="card align-middle rounded-custom" style="width: 330px; height: 530px; box-shadow: 0px 0px 38px 6px rgba(0,0,0,0.6);">
-      <div class="card-body text-center">
-        <img class="rounded-circle mb-3" src="images/MaxHofert2.jpg" alt="Profilfoto" width="150" height="150">
-        <h1 class="h4 mb-1">Max Hofert</h1>
-        <p class="text-muted mb-1">Fachinformatiker Anwendungsentwicklung</p>
-        <p class="text-muted">Webentwickler</p>
-        <div class="row mb-1">
-          <div class="col">
-            Telefon:&nbsp;&nbsp;+49 176 87826888
+  <main>
+    <div id="kontaktdaten" style="height: 150px;"></div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card align-middle rounded-custom" style="width: 330px; height: 530px; box-shadow: 0px 0px 38px 6px rgba(0,0,0,0.6); background-color: rgb(38, 38, 41); color: white;">
+        <div class="card-body text-center">
+          <img class="rounded-circle mb-3" src="images/MaxHofert2.jpg" alt="Profilfoto" width="150" height="150">
+          <h1 class="h4 mb-1">Max Hofert</h1>
+          <p class="text-muted mb-1">Fachinformatiker Anwendungsentwicklung</p>
+          <p class="text-muted">Webentwickler</p>
+          <div class="row mb-1">
+            <div class="col">
+              Telefon:&nbsp;&nbsp;+49 176 87826888
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-9">
+              <a class="btn btn-primary w-100 rounded-custom" href="tel:+4917687826888">📞 Anrufen</a>
+            </div>
+            <div class="col position-relative">
+              <button class="btn btn-warning w-100 rounded-custom" id="copyPhone" type="button">📋</button>
+              <div id="copyMsgPhone" class="copy-msg">Kopiert!</div>
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col">
+              Email:&nbsp;&nbsp;webmaster@max-hofert.de
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-9">
+              <a class="btn btn-primary w-100 rounded-custom" href="mailto:webmaster@max-hofert.de">✉️ E-Mail schreiben</a>
+            </div>
+            <div class="col position-relative">
+              <button class="btn btn-warning w-100 rounded-custom" id="copyMail" type="button">📋</button>
+              <div id="copyMsgMail" class="copy-msg">Kopiert!</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a class="btn btn-primary w-100 rounded-custom" href="https://www.linkedin.com/in/maximilian-hofert/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+            </div>
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col-9">
-            <a class="btn btn-primary w-100 rounded-custom" href="tel:+4917687826888">📞 Anrufen</a>
+        <footer style="color: white;" class="text-center mb-1">Zuletzt aktualisiert: <span id="lastmod"></span></footer>
+      </div>
+    </div>
+    <div class="d-flex flex-column justify-content-center" style="margin-top: 50px;">
+      <a href="#infos"  class="btn btn-outline-light shadow-sm" style="height: fit-content;" aria-label="Zu den Infos scrollen">
+        ↓ Mehr Infos
+      </a>
+    </div>
+    <div class="d-flex flex-column justify-content-center" style="margin-top: 170px; margin-bottom: 50px;">
+      <a href="#kontaktdaten" class="btn btn-outline-light shadow-sm" style="height: fit-content;" aria-label="Zu den Infos scrollen">
+        ↑ Zu den Kontaktdaten
+      </a>
+    </div>
+    <div id="infos" class="card align-middle rounded-custom" style="width: 700px; height: 590px; box-shadow: 0px 0px 38px 6px rgba(0,0,0,0.6); background-color: rgb(38, 38, 41); color: white;">
+      <div class="card-body">
+        <h2 class="mb-3 text-center infos">Kurzprofil</h2>
+        <p class="mb-4">
+          Fachinformatiker für Anwendungsentwicklung. Fokus auf Webentwicklung mit C# / ASP.NET,
+          Angular und SQL-Server. Praxiserfahrung mit Git, Entity Framework und Visual Studio/Visual Studio Code.
+        </p>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <h4 class="infos">Kenntnisse</h4>
+            <ul class="mb-0">
+              <li>Angular(/JS), Bootstrap</li>
+              <li>C#, ASP.NET</li>
+              <li>SQL-Server, EF</li>
+              <li>Visual Studio, VSCode</li>
+              <li>Git, Azure DevOps</li>
+              <li>Deutsch (Muttersprache), Englisch (B2)</li>
+            </ul>
           </div>
-          <div class="col position-relative">
-            <button class="btn btn-dark w-100 rounded-custom" id="copyPhone" type="button">📋</button>
-            <div id="copyMsgPhone" class="copy-msg">Kopiert!</div>
+          <div class="col-12 col-md-6">
+            <h4 class="infos">Ausbildung</h4>
+            <ul class="mb-0">
+              <li>Fachinformatiker für Anwendungsentwicklung | Schlenter &amp; Simon Software GmbH</li>
+              <li>Fachhochschulreife | Mies-van-der-Rohe-Schule Aachen</li>
+            </ul>
           </div>
-        </div>
-        <div class="row mb-1">
-          <div class="col">
-            Email:&nbsp;&nbsp;webmaster@max-hofert.de
+          <div class="col-12 col-md-6">
+            <h4 class="infos">Praktische Stationen</h4>
+            <ul class="mb-0">
+              <li>Der LernCoach (IT-Dienstl., 3&nbsp;Monate, 2022)</li>
+              <li>DSA Daten- &amp; Systemtechnik Aachen (Systementwicklung, 2019)</li>
+            </ul>
           </div>
-        </div>
-        <div class="row mb-4">
-          <div class="col-9">
-            <a class="btn btn-primary w-100 rounded-custom" href="mailto:webmaster@max-hofert.de">✉️ E-Mail schreiben</a>
-          </div>
-          <div class="col position-relative">
-            <button class="btn btn-dark w-100 rounded-custom" id="copyMail" type="button">📋</button>
-            <div id="copyMsgMail" class="copy-msg">Kopiert!</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <a class="btn btn-primary w-100 rounded-custom" href="https://www.linkedin.com/in/maximilian-hofert/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <div class="col-12 col-md-6">
+            <h4 class="infos">Sonstiges</h4>
+            <ul class="mb-0">
+              <li>Führerschein: Klasse B</li>
+              <li>Interessen: Physik, Elektrotechnik, KI</li>
+            </ul>
           </div>
         </div>
       </div>
-      <footer style="color: white;" class="text-center mb-1">Zuletzt aktualisiert: <span id="lastmod"></span></footer>
     </div>
+    <div style="height: 200px;"></div>
   </main>
   <script src="script.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
