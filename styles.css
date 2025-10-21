@@ -10,7 +10,7 @@ body {
 
     background: linear-gradient(135deg, #ff4b5c, #c700bd, #6200ff, #4400ff);
     background-repeat: no-repeat;
-    background-size: 100% 350%;
+    background-size: 100vw 350vh;
 }
 
 .rounded-custom {
