@@ -4,6 +4,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 
     background: linear-gradient(-45deg, rgba(255, 75, 90, 1), rgba(199, 0, 189, 1), rgba(140, 0, 255, 1), rgba(90, 0, 255, 1));
     background-repeat: no-repeat;
@@ -14,7 +16,7 @@ body {
     border-radius: 30px !important;
 }
 .test {
-  max-width: 330px;   /* statt fixer width inline */
+  max-width: 330px;
   width: 100%;
   margin-inline: auto;
 }
