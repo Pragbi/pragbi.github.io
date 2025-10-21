@@ -8,8 +8,9 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(-45deg, #ff4b5c, #a600c7, #0073ff, #6a00ff);
-    background-size: 100% 100%;
+    background: linear-gradient(135deg, #ff4b5c, #c700bd, #6200ff, #4400ff);
+    background-repeat: no-repeat;
+    background-size: 100% 350%;
 }
 
 .rounded-custom {
