@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(-45deg, #ff4b5c, #c700bd, #6200ff, #4400ff);
+    background: linear-gradient(-45deg, rgba(255, 75, 90, 1), rgba(199, 0, 189, 1), rgba(140, 0, 255, 1), rgba(90, 0, 255, 1));
     background-repeat: no-repeat;
     background-size: 110vw 350vh;
 }
@@ -13,6 +13,12 @@ body {
 .rounded-custom {
     border-radius: 30px !important;
 }
+.test {
+  max-width: 330px;   /* statt fixer width inline */
+  width: 100%;
+  margin-inline: auto;
+}
+
 
 .copy-msg {
   position: absolute;
@@ -28,7 +34,7 @@ body {
 
 .infos {
   font-weight: bolder;
-  color: rgb(207, 126, 5);
+  color: rgb(74, 141, 230);
   text-decoration: underline;
 }
 
